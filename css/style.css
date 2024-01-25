@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+
+}
+
+header, footer {
+	padding: 10px 0;
+	text-align: center;
+	color: #512a15;
+	font-weight: 500;
+	text-shadow: 0 0 20px white;
+}
+
+header {
+	background: #ecd1c5;
+}
+
+footer{
+	background: rgb(230,166,130);
+	background: linear-gradient(-90deg, rgba(230,166,130,1) 0%, rgba(249,212,202,1) 35%, rgba(2,155,155,1) 57%, rgba(8,128,138,1) 100%);
+
+}
+
+header h2{
+    font-size: 32px;
+}
+
+nav {
+	background: rgb(0,119,150);
+	background: linear-gradient(0deg, rgb(208, 156, 127) 0%, rgb(201, 105, 54) 100%);
+	padding: 5px;
+	text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #113253;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav  ul  li  ul {
+    position: absolute;
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background: linear-gradient(0deg, rgb(208, 156, 127) 0%, rgb(201, 105, 54) 100%);
+    width: 200px;
+    z-index:999;
+  }
+
+  nav ul li ul li a {
+    color: #113253;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+nav ul li ul li a:hover {
+    background-color: rgba(2,155,155,1);
+    color: white;
+}
+
+.hero {
+    position:relative;
+    width: 100%;
+}
+
+.hero h3 {
+	color: #512a15;
+	font-size: 36px;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.gallery_heading {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+main h1{
+    color: #113253;
+    font-size: 32px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+
+main video{
+    max-width: 100%;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.video_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    width: 90%;
+    grid-gap: 20px;
+}
+
+.video_section h2 {
+    margin-top: 0px;
+}
+
+.contact-form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    max-width: 500px;
+
+}
+
+.booking-form {
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 0 20px 20px;
+    
+}
+
+.booking-form input {
+    width: 60%;
+    
+}
+
+.booking-form label {
+    display: inline-block;
+    width: 25%;
+}
+
+#name, #email {
+    border-radius: 30px;
+    margin: 10px;
+    height: 25px;
+}
+
+
+
+.booking-form textarea {
+    vertical-align: top;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.button_div input {
+  
+    background-color: teal;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+    font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        width: 90%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+.hero {
+    text-align: center;
+}
+    .hero h3 {
+        color: #512a15;
+        font-size: 36px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .video_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        width: 90%;
+        grid-gap: 20px;
+    }
+
+    form input {
+        display: block;
+        width:90%;
+    }
+
+    label {
+        display: inline-block;
+        min-width: 100px;
+        padding: 20px;
+    }
+
+   
+    
+}
